@@ -1,0 +1,54 @@
+h1 {
+    color: #067799;
+    font-family: 'Lobster';
+    font-size: 50pt;
+    text-decoration: none;
+    font-display: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+h2 {
+    color: #aa0c83;
+}
+
+h6 {
+    color: #c50505;
+}
+
+.page-header{
+    background-color: antiquewhite;
+    margin-top: auto;
+    margin-bottom: 50px;
+    padding: 10px 10px 10px 30 px;
+}
+.news{
+    margin-top: auto;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    padding: 10px 10px 10px 30 px;
+}
+
+
+.api {
+    margin-left: 30px;
+}
+
+.date {
+    color: #bdb8b8;
+}
+
+.news-form textarea,
+.news-form input {
+    width: 100%;
+}
+.news h2 {
+    color: #8f046c;
+    font-family: 'Lobster';
+    font-size: 30pt;
+} 
+.source {
+    color: #bdb8b8;
+} 
+.author {
+    color: #bdb8b8;
+} 

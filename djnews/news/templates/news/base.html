@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <title>news</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/news.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <body >
+        <header class="page-header">
+            <div class="container">
+                <h1>Load and Read news</h1>
+            </div>
+        </header>
+        <div class="records"><h4>Current number of news: {{records}} </h4></div>
+        <ul class="list">
+            <form action="{% url 'news-apikey' %}"  method="post">
+                {% csrf_token %}
+                <label for="apikey">Enter API key:</label><br>
+                <input type="text" id="apikey" name="apikey"><br>
+                <input type="submit" value="Get News"><br>
+            </form>   
+            <h6>{{wrongkey}}</h6>
+            <h4 class="20news"><a href="{% url 'news-news20' %}">Read 20 news</a></h4>
+            <h4 class="100news"><a href="{% url 'news-news100' %}">Read 100 news in json</a></h4>
+        </ul>
+    </body>
+</html>

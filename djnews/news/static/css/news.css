@@ -15,6 +15,10 @@ h6 {
     color: #c50505;
 }
 
+.records {
+    margin-left : 30px;
+}
+
 .page-header{
     background-color: antiquewhite;
     margin-top: auto;

@@ -20,7 +20,7 @@ The enviroment could be fine now, we can move on to the migration.
 
 In order to create all the tables inside our database we run the migration as follow:
 ```
-python manage.py makemigrations
+python manage.py makemigrations news
 python manage.py migrate
 ```
 
